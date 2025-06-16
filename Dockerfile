@@ -1,5 +1,7 @@
-# Use the official n8n image
 FROM n8nio/n8n
+
+# Set user to root to avoid permission issues
+USER root
 
 # Expose the port
 EXPOSE 5678
