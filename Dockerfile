@@ -1,7 +1,11 @@
+# Use the official n8n image
 FROM n8nio/n8n
 
-# Expose port
+# Expose the port
 EXPOSE 5678
+
+# Install n8n globally
+RUN npm install -g n8n
 
 # Start n8n
 CMD ["n8n"]
